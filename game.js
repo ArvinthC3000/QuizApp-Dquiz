@@ -66,12 +66,16 @@ getQuestion=() => {
     ;
     currentQuestion = availableQuestion[questionIndex];
     question.innerText = currentQuestion.question;
-    console.log(currentQuestion)
+    // console.log(currentQuestion.options[2])
 
-    choices.forEach( choice => {
-        const number = choice.dataset['number'];
-        choice.innerText = currentQuestion.options[choice];
-        console.log(choice.innerText);
+    choices.forEach( v => {
+        // console.log(v)
+        const number = v.dataset['number'];
+        console.log(v.dataset['number'])
+        const oarray = Array.from(currentQuestion.options);
+        console.log(oarray[number])
+        dataset[number].innerText = orray[number];
+        console.log(number.innerText);
     })
 }
 
