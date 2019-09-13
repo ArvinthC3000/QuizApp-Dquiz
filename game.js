@@ -16,42 +16,44 @@ let questions = [
             "Golden State Warriros",
             "Huston Rocket"
         ],
-        answer: "Huston Rocket"
+        answer: 4
     },
     {
-        question: "Which one is WRONG team name in NBA?",
+        question: "Who is from Argentina?",
         options: [
-            "New York Bulls",
-            "Los Angeles Kings",
-            "Golden State Warriros",
-            "Huston Rocket"
+            "Ronaldo C",
+            "Messi L",
+            "Tendulkar S",
+            "Smith S"
         ],
-        answer: "Huston Rocket"
+        answer: 2
     },
     {
         question: "Which one is blue?",
         options: [
-            "New York Bulls",
-            "Los Angeles Kings",
-            "Golden State Warriros",
-            "Huston Rocket"
+            "Olive",
+            "Ivory",
+            "Maroon",
+            "Sea"
         ],
-        answer: "Huston Rocket"
+        answer: 4
     },
     {
         question: "Which one is red?",
         options: [
-            "New York Bulls",
-            "Los Angeles Kings",
-            "Golden State Warriros",
-            "Huston Rocket"
+            "Olive",
+            "Ivory",
+            "Maroon",
+            "Sea"
         ],
-        answer: "Huston Rocket"
+        answer: 3
     }
 ]
 
 const bonus = 1;
 const maxQuestion = 4;
+
+//Initiating the game
 
 startGame = () => {
     questionCounter = 0;
@@ -60,23 +62,44 @@ startGame = () => {
     getQuestion();
 }
 
+//Getting questions in random by checking the availablity of questions
+
 getQuestion=() => {
+if(availableQuestion.length ===0 || questionCounter >= maxQuestion){
+    return window.location.assign("/end.html");
+}
+
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestion.length);
-    ;
     currentQuestion = availableQuestion[questionIndex];
     question.innerText = currentQuestion.question;
-    // console.log(currentQuestion.options[2])
-
     choices.forEach( v => {
-        // console.log(v)
         const number = v.dataset['number'];
-        console.log(v.dataset['number'])
-        const oarray = Array.from(currentQuestion.options);
-        console.log(oarray[number])
-        dataset[number].innerText = orray[number];
-        console.log(number.innerText);
-    })
+        let optionArray = Array.from(currentQuestion.options);
+        index = number-1;
+        // console.log(optionArray[index])
+        choices[index].innerText =optionArray[index];     
+    });
+    // console.log(availableQuestion);
+
+    //Splicing the loaded question
+
+    availableQuestion.splice(questionIndex,1);
+    console.log(availableQuestion);
+    acceptingAnswers = true;
 }
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e =>{
+        if(!acceptingAnswers) return;
+
+        acceptingAnswers = false;
+        const selectedOptionHTML = e.target;
+        const selectedAnswerIndex = selectedOptionHTML.dataset['number'];
+        console.log(selectedOptionHTML);
+        console.log(selectedAnswerIndex);
+        getQuestion();
+    })
+})
 
 startGame();
