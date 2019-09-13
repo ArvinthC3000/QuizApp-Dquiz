@@ -12,15 +12,50 @@
     padding: 1.5rem 2.5rem;
     background-color: black;
     color: white;
-    width: 20%;
+    /* width: 20%; */
+    text-align: center;
     border-radius: 2.5rem 0 0 2.5rem;
 }
 .choice-option{
     padding: 1.5rem;
+    width: 100%;
 }
 .choice-container:hover{
     box-shadow: 0 .1rem 1.4rem 0 rgba(119, 125, 128, 0.5);
     cursor: pointer;
     transition: 150ms;
     transform: translateY(-.1rem)
+}
+.correct{
+    background-color: #8AF388;
+}
+.incorrect{
+    background-color: #FF9090;
+}
+
+/* HUD */
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+.hud-prefix{
+    font-size: 2rem;
+    text-align: center;
+}
+.hud-content{
+    text-align: center
+}
+.hud-bar{
+    width: 20rem;
+    border: .2rem solid black;
+    height: 4rem;
+    border-radius: 2.5rem;
+    margin-top: 1.4rem;
+}
+.hudBarFull{
+    background-color:rgb(160, 160, 160);
+    width: 0%;
+    height: 100%;
+    border-radius: 2.5rem;
 }

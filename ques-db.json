@@ -1,0 +1,262 @@
+[
+    {
+        "question": "Nobel prize is awarded for which of the following disciplines?",
+        "options": [
+            "Literature, peace and economics",
+            "Medicine or Physiology",
+            "Chemistry and Physics",
+            "All the above"
+        ],
+        "answer": 4
+    },
+    {
+        "question": "Sun exposure can bring about an improvement in health because of which of the following reasons?",
+        "options": [
+            "the infrared light kills bacteria in the body",
+            "resistance power increases",
+            "the pigment cells in the skin get stimulated and produce a healthy tan",
+            "the ultraviolet rays convert skin oil into Vitamin D"
+        ],
+        "answer": 4
+    },
+        {
+        "question": "The Indian, who holds the pride of beating the computers in mathematical wizard is?",
+        "options": [
+            "Shakuntala Devi",
+            "Raja Ramanna",
+            "Ramanujam",
+            "Rina Panigrahi"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which is basically red?",
+        "options": [
+            "Oliver",
+            "Ivory",
+            "Maroon",
+            "Aqua"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which is the strongest metal",
+        "options": [
+            "Tungsten",
+            "Diamond",
+            "Vibranium",
+            "Adamantium"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "The radioactive element radium was invented by which of the following scientists?",
+        "options": [
+            "Marie Curie",
+            "Benjamin Franklin",
+            "Albert Einstein",
+            "Isaac Newton"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following items was introduced by James Watt?",
+        "options": [
+            "Hot air balloon",
+            "Steam boat",
+            "Diving bell",
+            "Rotary Steam Engine"
+        ],
+        "answer": 4
+    },
+    {
+        "question": "Which is the most preferable language when it comes to running time?",
+        "options": [
+            "Java",
+            "Python",
+            "c",
+            "R"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Generic is most similar in meaning to",
+        "options": [
+            "Branded",
+            "Basic",
+            "Trademarked",
+            "Altruist"
+        ],
+        "answer": 4
+    },
+    {
+        "question": "Ctrl, Shift and Alt are called _____ keys.",
+        "options": [
+            "modifier",
+            "function",
+            "alphanumeric",
+            "adjustment"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "The blue colour of the clear sky is due to",
+        "options": [
+            "Diffraction of light",
+            "Dispersion of light",
+            "Reflection of light",
+            "Refraction of light"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following is used in pencils?",
+        "options": [
+            "Silicon",
+            "Phosphorous",
+            "Graphite",
+            "Charcoal"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following parts of the sun is easily visible only during a total solar eclipse?",
+        "options": [
+            "core",
+            "photosphere",
+            "sunspots",
+            "corona"
+        ],
+        "answer": 4
+    },
+    {
+        "question": "When a gas is turned into a liquid, the process is called",
+        "options": [
+            "condensation",
+            "evaporation",
+            "deposition",
+            "sublimation"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "The Ozone Layer restricts from",
+        "options": [
+            "Infrared Rays",
+            "Radio waves",
+            "Ultraviolet Radiation",
+            "X-Rays and Gamma Rays"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "The filament of an electric bulb is made of?",
+        "options": [
+            "tungsten",
+            "nichrome",
+            "graphite",
+            "iron"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "The Mudumalai National Park is located in which state ?",
+        "options": [
+            "Chattisgarh",
+            "Haryana",
+            "Tamil Nadu",
+            "Kerala"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "In a laser (say neon laser) all the atoms emit the light waves of",
+        "options": [
+            "Same frequency",
+            "Same amplitude",
+            "Same phase",
+            "All the above"
+        ],
+        "answer": 4
+    },
+    {
+        "question": "Iodine test is used to detect",
+        "options": [
+            "Carbohydrate",
+            "Fat",
+            "Protein",
+            "Cholesterol"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following metals forms an amalgam with other metals ?",
+        "options": [
+            "Zinc",
+            "Mercury",
+            "Tin",
+            "Lead"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Seawater (i.e. saltwater) freezes at:(in deg C)",
+        "options": [
+            "Below 100",
+            "At 100",
+            "Above 100",
+            "seawater does not freeze"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Of the following, which element is common to all acids",
+        "options": [
+            "carbon",
+            "hydrogen",
+            "sulphur",
+            "oxygen"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Smallest of all the continents?",
+        "options": [
+            "Asia",
+            "Australia",
+            "Africa",
+            "America"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which is the largest of all the Deserts?",
+        "options": [
+            "Thar",
+            "Sahara",
+            "Kalahari",
+            "Arabian"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "The famous Rock Garden is located in which city?",
+        "options": [
+            "Chandigar",
+            "Jaipur",
+            "Simla",
+            "Lucknow"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "The Petronas Twin Towers is located in which country?",
+        "options": [
+            "Malaysia",
+            "Singapore",
+            "Thailand",
+            "Brazil"
+        ],
+        "answer": 1
+    }
+]

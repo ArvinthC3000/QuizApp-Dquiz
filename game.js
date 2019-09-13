@@ -1,5 +1,8 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-option'));
+const questionAccessed = document.getElementById('questionAccessed'); 
+const bar = document.getElementById('bar'); 
+const scoreText = document.getElementById('score'); 
 
 let currentQuestion ={};
 let acceptingAnswers = true;
@@ -66,10 +69,13 @@ startGame = () => {
 
 getQuestion=() => {
 if(availableQuestion.length ===0 || questionCounter >= maxQuestion){
+    //Go to end.html page
     return window.location.assign("/end.html");
 }
 
     questionCounter++;
+    bar.style.width = ((questionCounter/maxQuestion)*100)+'%';
+    questionAccessed.innerText = "Questions "+questionCounter +"/"+maxQuestion;
     const questionIndex = Math.floor(Math.random() * availableQuestion.length);
     currentQuestion = availableQuestion[questionIndex];
     question.innerText = currentQuestion.question;
@@ -77,10 +83,8 @@ if(availableQuestion.length ===0 || questionCounter >= maxQuestion){
         const number = v.dataset['number'];
         let optionArray = Array.from(currentQuestion.options);
         index = number-1;
-        // console.log(optionArray[index])
         choices[index].innerText =optionArray[index];     
     });
-    // console.log(availableQuestion);
 
     //Splicing the loaded question
 
@@ -96,10 +100,33 @@ choices.forEach(choice => {
         acceptingAnswers = false;
         const selectedOptionHTML = e.target;
         const selectedAnswerIndex = selectedOptionHTML.dataset['number'];
-        console.log(selectedOptionHTML);
-        console.log(selectedAnswerIndex);
-        getQuestion();
+
+        //To check whether the selected option is correct
+        //Using ternary operator
+
+        const createClass = selectedAnswerIndex == currentQuestion.answer? 
+        'correct': 'incorrect';
+        // console.log(createClass);
+
+        if(createClass==='correct'){
+            increamentScore(bonus);
+        }
+
+        selectedOptionHTML.parentElement.classList.add(createClass);
+
+        setTimeout( ()=> {
+            selectedOptionHTML.parentElement.classList.remove(createClass);
+            getQuestion();
+        }, 1000);
+        
     })
 })
+
+increamentScore = num => {
+    
+    score += num;
+    scoreText.innerText =score;
+    console.log(scoreText.innerText)
+}
 
 startGame();
