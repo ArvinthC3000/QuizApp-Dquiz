@@ -1,5 +1,7 @@
 # DQuiz-V1
 
+Authors: Mohammed Mudassir, Arvinth C
+
 Tests your knowledge on featuring sections.
 Failed to score good point? Not a problem. Try again! Fail again! Fail better!
 
