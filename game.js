@@ -4,6 +4,12 @@ const questionAccessed = document.getElementById('questionAccessed');
 const bar = document.getElementById('bar'); 
 const scoreText = document.getElementById('score'); 
 
+//Getting JSON and storing it in local storage
+console.log('hi');
+$.getJSON('ques-db.json', function(json){
+    localStorage.setItem('gk-questions',JSON.stringify(json));
+})
+
 let currentQuestion ={};
 let acceptingAnswers = true;
 let score = 0;
